@@ -36,18 +36,24 @@ Cleaning and standardizing text data is  the important section. Here, tm package
 Matrix of word counts for each individual document in the matrix (e.g. documents as rows, words as columns or vice versa)
 This is the  final step of data preparation. This is called as tokenization process.Tokenization describes the general process of breaking down a text corpus into individual elements that serve as input for various natural language processing algorithms. The tm package provides DocumentTermMatrix() function for tokenization. Document Term Matrix is a data structure, in which sms message indicates as a row and words indicate as columns. 
 
-![](images/image01.png)
+![](images/image1.png)
 
 2.3) Text Analysis (e.g. word counts, visualizations using word clouds)
 
 The word cloud provides good visualization for the frequency of words in text data. The cloud contains words that are scattered randomly around the figure. The front size  is scaled according to frequency of words in text data. Following three figures provide good visualization for spam and ham words.  
 
+![](images/image5.png)
 
 Figure 01: Word cloud for prepared SMS corpus.
+
+![](images/image4.png)
 
 Figure 02: Word cloud for subset where the message type is spam
 
 According to figure 02 spam messages include words- free, mobile, claim, prize and urgent. 
+
+
+![](images/image2.png)
 
 
 Figure 03: Word cloud for subset where the message type is ham
@@ -57,6 +63,10 @@ According to figure 03 ham messages include words- day, come, can, sorry and hom
 
 What is the accuracy of the model? Accuracy = 0.9792
 
+![](images/image6.png)
+
+
+![](images/image3.png)
 
 
 Figure 04: Cross table 
@@ -72,6 +82,7 @@ Adding Laplace estimator changes the model performance. Because Laplace smoothin
 
 #### Adding Laplace = 1 , measure the performance. 
  
+ ![](images/image7.png)
 
 Adding the Laplace estimator reduced the number of false positives. But it increased the number of false negatives. 
 
